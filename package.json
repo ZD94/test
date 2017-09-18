@@ -1,0 +1,48 @@
+{
+  "name": "place",
+  "version": "1.0.0",
+  "description": "jingli.tech place service",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "dist": "tsc && mkdir -p dist/config && cp -Rf config/config.json dist/config/config.json && cp package.json dist/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.l.jingli365.com:svr/place.git"
+  },
+  "keywords": [
+    "jingli",
+    "place",
+    "service"
+  ],
+  "author": "lihui.wang@jingli365.com",
+  "license": "ISC",
+  "devDependencies": {
+    "@jingli/database": "^1.0.1",
+    "@types/express": "^4.0.36",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "^8.0.14",
+    "@types/pg": "^6.1.42",
+    "@types/sequelize": "^4.0.65",
+    "mocha": "^3.5.0",
+    "request-promise": "^4.2.1",
+    "ts-node": "^3.2.0",
+    "tslib": "^1.7.1",
+    "typescript": "^2.4.1"
+  },
+  "dependencies": {
+    "@jingli/config": "^1.0.6",
+    "@jingli/logger": "^1.0.1",
+    "bluebird": "^3.5.0",
+    "chai": "^4.1.1",
+    "express": "^4.15.4",
+    "pg": "^6.4.1",
+    "pg-hstore": "^2.3.2",
+    "pinyin": "^2.8.3",
+    "really-need": "^1.9.2",
+    "request": "^2.81.0",
+    "sequelize": "^3.30.4",
+    "supertest": "^3.0.0"
+  }
+}
